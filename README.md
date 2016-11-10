@@ -10,6 +10,8 @@ compile 'com.tumblr:backboard:0.1.0'
 
 # Implement
 
+Code : 
+
 ```java
         FrameLayout frameLayout = (FrameLayout) findViewById(R.id.container);
 
@@ -57,3 +59,17 @@ compile 'com.tumblr:backboard:0.1.0'
         }, 400);
 ```
 
+The important thing is setup a popup theme for comment activity :
+
+```java
+    <style name="Theme.PopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="actionBarStyle">@null</item>
+    </style>
+```
