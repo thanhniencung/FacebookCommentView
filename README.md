@@ -1,6 +1,6 @@
 # Screenshot
 
-![Example Image](https://raw.github.com/thanhniencung/FacebookCommentView/master/device-2016-11-10-233237.png)
+![Example Image](https://raw.github.com/thanhniencung/FacebookCommentView/master/device-2016-11-10-233237.png = 480x800)
 
 # Libraries
 ```java
