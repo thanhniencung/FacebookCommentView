@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_marginRight="14dp"
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/who"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            android:text="Nguyen Van A"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_marginBottom="4dp"
+            android:text="Khong co viec gi kho, chi so long khong ben"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="italic"
+            android:id="@+id/time"
+            android:text="1 phut truoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

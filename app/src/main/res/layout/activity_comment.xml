@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="6dp"
+    android:id="@+id/container"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/comment_view"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/border_bottom"
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_heart"
+                android:textSize="17sp"
+                android:lines="1"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kiên Nguyễn and 4 others"
+                android:textStyle="bold"
+                android:layout_margin="5dp" />
+
+            <ImageView
+                android:layout_marginRight="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_above="@+id/viewBottom"
+            android:id="@+id/commentsListView"
+            android:dividerHeight="40px"
+            android:divider="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_below="@id/headerLayout"/>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/viewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+</FrameLayout>
