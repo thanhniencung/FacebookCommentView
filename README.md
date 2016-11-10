@@ -1,7 +1,12 @@
-# Libraries
+# Screenshot
 
+![Example Image](https://raw.github.com/athanhniencung/FacebookCommentView/master/device-2016-11-10-233237.png)
+
+# Libraries
+```java
 compile 'com.facebook.rebound:rebound:0.3.8'
 compile 'com.tumblr:backboard:0.1.0'
+```
 
 # Implement
 
